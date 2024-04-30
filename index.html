@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Visibilidad de la Actividad del Usuario</title>
+  <style>
+    #user-activity {
+      background-color: #f2f2f2;
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 300px;
+      margin: 0 auto;
+      text-align: center;
+      border-radius: 5%;
+      color: blue;
+    }
+
+    #activity-message {
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: crimson;
+    }
+  </style>
+</head>
+<body>
+  <h1>Visibilidad de la Actividad del Usuario</h1>
+  <div id="user-activity">
+    <h2>Actividad del Usuario</h2>
+    <p id="activity-message">Ninguna actividad</p>
+    <button id="activity-button" onclick="showActivity()">Hacer algo</button>
+  </div>
+
+  <script>
+    function showActivity() {
+      var message = document.getElementById('activity-message');
+      message.innerHTML = 'El usuario esta realizando una tarea';
+    }
+  </script>
+</body>
+</html>

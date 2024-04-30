@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Visibilidad de la Actividad del Usuario</title>
+ 
+</head>
+<body>
+  <h1>Visibilidad de la Actividad del Usuario</h1>
+  <div id="user-activity">
+    <h2>Actividad del Usuario</h2>
+    <p id="activity-message">Ninguna actividad</p>
+    <button id="activity-button" onclick="showActivity()">Hacer algo</button>
+  </div>
+
+  <script>
+    function showActivity() {
+      var message = document.getElementById('activity-message');
+      message.innerHTML = 'El usuario esta realizando una tarea';
+    }
+  </script>
+</body>
+</html>
